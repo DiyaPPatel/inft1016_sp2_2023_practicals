@@ -63,9 +63,9 @@ def foo():
 
 | Number |  Colour |   Size   |
 |-------:|:-------:|:--------:|
-|    1   |    Red  |  Medium  |
-|    2   |    Blue |  Small   |
-|    3   |    Green|  Large   |
+|1       |      Red|  Medium  |
+|2       |     Blue|  Small   |
+|3       |    Green|  Large   |
 
 def my_function():
 
