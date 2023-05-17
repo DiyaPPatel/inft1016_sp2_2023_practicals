@@ -57,7 +57,7 @@ def foo():
 
         return True
 
-![img1](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kismet-IMG_6007-black.jpg.)
+![img1](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Kismet-IMG_6007-gradient.jpg/440px-Kismet-IMG_6007-gradient.jpg)
 ![img2](https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg.)
 ![img3](https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg)
 
