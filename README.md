@@ -19,9 +19,9 @@ This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing el
 
 *This text is italic.*
 
-*This text is bold.* 
+**This text is bold.** 
 
-**This text is bold and italic!**
+***This text is bold and italic!***
 
 # This is a large heading. 
 
