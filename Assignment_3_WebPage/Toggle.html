@@ -4,12 +4,24 @@
         <meta charset="utf-8">    
         <title>My page title</title>   
          <link rel="stylesheet" href="base.css">    
-         <script></script>  
+         <script>
+            function theme() {
+                const change_theme = document.querySelector("html");
+                const check = change_theme.getAttribute("data-theme");
+                if (check == "dark") {
+                    change_theme.setAttribute("data-theme","root");
+                }
+                else {
+                change_theme.setAttribute("data-theme", "dark");
+                }
+            }
+
+         </script>  
     </head> 
     <body>   
          <header>      
             <h1>Header</h1>      
-            <button onclick="">Toggle Theme</button>    
+            <button onclick="theme();">Toggle Theme</button>    
         </header>    
         <nav>      
             <ul>        
