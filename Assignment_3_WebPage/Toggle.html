@@ -13,14 +13,31 @@
                 }
                 else {
                 change_theme.setAttribute("data-theme", "dark");
+                }}
+            function heading_name(){
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const user_name = urlParams.get('user_name')
+                var main_heading = document.getElementById("my_username");
+                if (queryString != '') {
+                    var output = "Welcome " + user_name;
+                    main_heading.innerHTML = output; 
                 }
+                else { 
+                    main_heading.innerHTML = "Welcome";
+                }
+                
+                
+                
             }
+            
 
          </script>  
     </head> 
-    <body>   
-         <header>      
-            <h1>Header</h1>      
+    <body onload="heading_name()">   
+         <header>
+            <h1 id="my_username"></h1>     
+            <h1>Heading</h1>      
             <button onclick="theme();">Toggle Theme</button>    
         </header>    
         <nav>      
