@@ -8,11 +8,11 @@
 }
 
 [data-theme="dark"] {
-     --bg-color: rgb(0, 0, 0);
-     --primary-color: rgb(177, 211, 24);
-    --secondary-color: rgb(225, 17, 212);
+     --bg-color: rgb(112, 109, 109);
+     --primary-color: rgb(159, 193, 7);
+    --secondary-color: rgb(221, 122, 221);
     --font-color: rgb(255,255,255);
-    --heading-color: rgb(15, 124, 192);
+    --heading-color: rgb(1, 56, 90);
  }
 
  body {
