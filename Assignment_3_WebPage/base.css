@@ -1,18 +1,18 @@
 :root {
     --bg-color: rgb(255, 255, 255);
-    --primary-color: rgb(18, 169, 73);
-    --secondary-color: rgb(38, 139, 210);
+    --primary-color: rgb(3, 150, 12);
+    --secondary-color: rgb(20, 198, 157);
     --font-color: rgb(0,0,0);
-    --heading-color: rgb(209, 16, 32);
+    --heading-color: rgb(187, 84, 0);
 
 }
 
 [data-theme="dark"] {
      --bg-color: rgb(112, 109, 109);
-     --primary-color: rgb(159, 193, 7);
-    --secondary-color: rgb(221, 122, 221);
-    --font-color: rgb(255,255,255);
-    --heading-color: rgb(1, 56, 90);
+     --primary-color: rgb(249, 230, 207);
+    --secondary-color: rgb(187, 125, 187);
+    --font-color: rgb(255, 255, 255);
+    --heading-color: rgb(0, 0, 0);
  }
 
  body {
