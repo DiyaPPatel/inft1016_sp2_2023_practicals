@@ -1,3 +1,4 @@
+/* following are the color for the light(default) theme */
 :root {
     --bg-color: rgb(255, 255, 255);
     --primary-color: rgb(3, 150, 12);
@@ -7,7 +8,7 @@
     --ancor-color: white;
 
 }
-
+/* following are the color for dark theme */
 [data-theme="dark"] {
      --bg-color: rgb(14, 10, 10);
      --primary-color: rgb(128, 124, 118);
@@ -35,13 +36,14 @@ h1{
 article{
     background-color: var(--secondary-color) ;
 }
+/* this will align the whole nav element in center and given the padding */
 nav {
     background-color: var(--heading-color);
     padding: 10px;
     text-align: center;
     color: var(--ancor-color);
 }
-
+/* this will keep the desplay as none for other images than default */
 #img2,#img3,#img4,#img5 {
     display: none;
 }

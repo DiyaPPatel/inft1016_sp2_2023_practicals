@@ -5,36 +5,50 @@
         <title>Assignment 3: Web page</title>   
          <link rel="stylesheet" href="base.css">    
          <script>
+            /* following function will help to change the theme when the user click the toggle button */
             function theme() {
                 const change_theme = document.querySelector("html");
                 const check = change_theme.getAttribute("data-theme");
+            /* if the attribute for html object is not dark then it will selct root as theme */
                 if (check == "dark") {
                     change_theme.setAttribute("data-theme","root");
                     localStorage.setItem("theme", "root"); 
                 }
+            /* else(root) then it will select dark theme */
                 else {
                 change_theme.setAttribute("data-theme", "dark");
                 localStorage.setItem("theme", "dark"); 
                 }}
+            /* following fuction will load when the web page is load*/
             function heading_name(){
                 const queryString = window.location.search;
+            /* get the url string */
                 const urlParams = new URLSearchParams(queryString);
+            /* getting the theme from local storage */
                 const save_theme = localStorage.getItem("theme");
+            /* changing the theme according to the saved storage when the page is load again */
                 const change_theme = document.querySelector("html");
                 change_theme.setAttribute("data-theme",save_theme)
+            /* from the url ling it will get the value for user_name*/
                 const user_name = urlParams.get('user_name');
                 const save_user = localStorage.getItem("user");
                 var main_heading = document.getElementById("my_username");
+            /* if some value is given to the string for user_name then it will show that name and save it to local storage*/
                 if (queryString != '') {
                     var output = "Hello " + user_name;
                     main_heading.innerHTML = output;
+                    /* storing name to local storage*/
                     localStorage.setItem("user", user_name); 
                 }
+            /* if no value is given for user name then it will check local storage for the value for user */
                 else { 
                     main_heading.innerHTML = "Hello " + save_user;
                 }
+            /* it will print the cureent date and time when the user accessed the web page */
                 document.getElementById("showdate").innerHTML = "Web page accessed on "+ Date();
             }
+            /* following function will toggle betweent the images and paragraphs
+            tored in div element according to the button pressed */
             function image_toggle1() {
                 document.getElementById("img1").style.display = "block";
                 document.getElementById("img2").style.display = "none";
@@ -77,6 +91,7 @@
 
          </script>  
     </head> 
+    
     <body onload="heading_name()">   
          <header>
             <h1 id="my_username"></h1>
