@@ -21,7 +21,7 @@
 button {
     background-color: var(--primary-color)
 }
-p {
+p, a {
     color: var(--font-color)
 }
 h1{
@@ -29,4 +29,8 @@ h1{
 }
 article{
     background-color: var(--secondary-color) ;
+}
+
+#img2,#img3,#img4,#img5 {
+    display: none;
 }

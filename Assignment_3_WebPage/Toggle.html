@@ -26,17 +26,55 @@
                 else { 
                     main_heading.innerHTML = "Welcome";
                 }
-                
-                
-                
+                document.getElementById("showdate").innerHTML = "Web page accessed on "+ Date();
             }
-            
+            function image_toggle1() {
+                document.getElementById("img1").style.display = "block";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "none";
+                document.getElementById("img4").style.display = "none";
+                document.getElementById("img5").style.display = "none";
+                }  
+            function image_toggle2() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "block";
+                document.getElementById("img3").style.display = "none";
+                document.getElementById("img4").style.display = "none";
+                document.getElementById("img5").style.display = "none";
+                
+                }  
+            function image_toggle3() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "block";
+                document.getElementById("img4").style.display = "none";
+                document.getElementById("img5").style.display = "none";
+                
+                }  
+            function image_toggle4() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "none";
+                document.getElementById("img4").style.display = "block";
+                document.getElementById("img5").style.display = "none";
+                
+                }  
+            function image_toggle5() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "none";
+                document.getElementById("img4").style.display = "none";
+                document.getElementById("img5").style.display = "block";
+                
+                }  
 
          </script>  
     </head> 
     <body onload="heading_name()">   
          <header>
-            <h1 id="my_username"></h1>     
+            <h1 id="my_username"></h1>
+            <p id="showdate"></p>    
+            <p id="yoo"></p> 
             <h1 style="text-align: center;">Heading</h1>      
             <button onclick="theme();"style="text-align: center;">Toggle Theme</button>    
         </header>    
@@ -54,8 +92,34 @@
          </nav>    
          <main>      
             <article>        
-                <h2>Data Analysis</h2> 
-                <p><img src="https://openverse.org/image/bc3938ee-5cdd-48f5-a808-a8d441904bd3?q=trees.jpg" height="400"/>This is a image</p>
+                <h2>Data Analysis</h2>
+                <div id="img1"> 
+                <img src="https://th.bing.com/th/id/OIP.Nwedzz985vExSqsQJxjKuQHaEK?w=289&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" height="400"/>
+                <p>This is a image</p>
+                </div>
+                <div id="img2">
+                <img src="https://live.staticflickr.com/5505/10517564194_c98c355387_b.jpg" alt="Japanese Garden Tree"/>
+                <p>"Famous Japanese Garden Tree in Portland by Michael Matti" by Michael Matti is licensed under CC BY-NC 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse.</p>
+                </div>
+                <div id="img3">
+                <img src="https://live.staticflickr.com/3118/2431912955_f1efb765aa_b.jpg"/>
+                <p>""Palm tree" by F H Mira is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.
+                </p>
+                </div>
+                <div id="img4">
+                <img src="https://live.staticflickr.com/5505/10517564194_c98c355387_b.jpg" alt="Japanese Garden Tree"/>
+                <p>"Famous Japanese Garden Tree in Portland by Michael Matti" by Michael Matti is licensed under CC BY-NC 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse.</p>
+                </div>
+                <div id="img5">
+                <img src="https://live.staticflickr.com/5505/10517564194_c98c355387_b.jpg" alt="Japanese Garden Tree"/>
+                <p>"Famous Japanese Garden Tree in Portland by Michael Matti" by Michael Matti is licensed under CC BY-NC 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse.</p>
+                </div>
+                    
+                <p><button onclick="image_toggle1();">Data Analyst</button>
+                <button onclick="image_toggle2();">Japanese Garden Tree</button>   
+                <button onclick="image_toggle3();">Japanese Garden Tree</button>   
+                <button onclick="image_toggle4();">Japanese Garden Tree</button>   
+                <button onclick="image_toggle5();">Japanese Garden Tree</button>   </p>
                 <p>Data Analysis is a process of gathering raw data and then analysing it and from the data, some useful information could be formed and that information could be much useful for the business in various ways like for taking future decisions, solving errors and much more.</p>
                 <p>As the number and size of the data in any business is increasing day-by-day as the business are also getting wider, data analysis is more useful nut expensive process for any business.</p>        
                 <h3>Steps</h3>        
@@ -66,9 +130,8 @@
                 <p>And as we know that where there are advantages there will always be some disadvantages. So here some disadvantages like over reliance on data, security risk, ethical concerns and more can be found.</p>      
             </article>      
             <aside>
-                <button>
-                    <img src="https://openverse.org/image/e2049614-f186-4d07-819a-c96028b0d007?q=trees.jpg" alt="Japanese Garden Tree">
-                </button>        
+                
+                         
                 <h2>Related</h2>        
                 <ul>          
                     <li><a href="#">Oh I do like to be beside the seaside</a></li>          
