@@ -17,14 +17,16 @@
             function heading_name(){
                 const queryString = window.location.search;
                 const urlParams = new URLSearchParams(queryString);
-                const user_name = urlParams.get('user_name')
+                const user_name = urlParams.get('user_name');
+                const save_user = localStorage.getItem("user");
                 var main_heading = document.getElementById("my_username");
                 if (queryString != '') {
                     var output = "Hello " + user_name;
-                    main_heading.innerHTML = output; 
+                    main_heading.innerHTML = output;
+                    localStorage.setItem("user", user_name); 
                 }
                 else { 
-                    main_heading.innerHTML = "Hello";
+                    main_heading.innerHTML = "Hello " + save_user;
                 }
                 document.getElementById("showdate").innerHTML = "Web page accessed on "+ Date();
             }
@@ -76,25 +78,26 @@
             <p id="showdate"></p>    
             <p id="yoo"></p> 
             <h1 style="text-align: center;">Data Analysis</h1>      
-            <button onclick="theme();"style="text-align: center;">Toggle Theme</button>    
+            <button onclick="theme();"style="text-align: center;">Toggle Theme</button>  
+            <br><br>
         </header>    
         <nav>      
-            <ul>        
-                <li><a href="#">Home</a></li>        
-                <li><a href="#">Our team</a></li>        
-                <li><a href="#">Projects</a></li>        
-                <li><a href="#">Contact</a></li>      
-            </ul>       
+            <p>        
+                <a href="#">Home</a>        
+                <a href="#">Our team</a>       
+                <a href="#">Projects</a>      
+                <a href="#">Contact</a>      
+            </p>       
             <form>         
                 <input type="text" name="user_name" placeholder="Enter your name!">         
                 <button type="submit">Apply!</button>       
             </form>    
          </nav>    
          <main>      
-            <article>        
+            <article style="text-align: center;">        
                 <h2>Data Analysis</h2>
                 <div id="img1"> 
-                <img src="https://th.bing.com/th/id/R.d4c0c844b42a54ec68cb34febcec6508?rik=j85N2q8VodUmnw&riu=http%3a%2f%2fwww.hrinasia.com%2fwp-content%2fuploads%2f2016%2f11%2fData-Analysis_123.jpg&ehk=ueJAPwFoWrDeu%2f7lgwtrR5HUG%2fn6pI0lX04qndSbEjM%3d&risl=&pid=ImgRaw&r=0" height="400"/>
+                <img src="https://th.bing.com/th/id/R.d4c0c844b42a54ec68cb34febcec6508?rik=j85N2q8VodUmnw&riu=http%3a%2f%2fwww.hrinasia.com%2fwp-content%2fuploads%2f2016%2f11%2fData-Analysis_123.jpg&ehk=ueJAPwFoWrDeu%2f7lgwtrR5HUG%2fn6pI0lX04qndSbEjM%3d&risl=&pid=ImgRaw&r=0" height="500"/>
                 <p>"Data Analysis Skills in Demand for Jobs of the Future" To visit the site for copyright information, visit www.hrinasia.com</p>
                 </div>
                 <div id="img2">
@@ -115,7 +118,7 @@
                 <p>""Corfu - Sept 2005 - Ancient Olive Trees" by Gareth1953 All Right Now is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
                 </div>
                     
-                <p><button onclick="image_toggle1();">Data Analyst</button>
+                <p style="text-align: center;"><button onclick="image_toggle1();">Data Analyst</button>
                 <button onclick="image_toggle2();">Japanese Garden Tree</button>   
                 <button onclick="image_toggle3();">Plam Tree</button>   
                 <button onclick="image_toggle4();">Mangroves</button>   

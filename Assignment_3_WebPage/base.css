@@ -4,15 +4,17 @@
     --secondary-color: rgb(20, 198, 157);
     --font-color: rgb(0,0,0);
     --heading-color: rgb(1, 77, 0);
+    --ancor-color: white;
 
 }
 
 [data-theme="dark"] {
      --bg-color: rgb(14, 10, 10);
      --primary-color: rgb(128, 124, 118);
-    --secondary-color: rgba(92, 79, 92, 0.979);
+    --secondary-color: rgba(122, 122, 122, 0.587);
     --font-color: rgb(255, 255, 255);
     --heading-color: rgb(224, 199, 199);
+    --ancor-color: black;
  }
 
  body {
@@ -21,14 +23,23 @@
 button {
     background-color: var(--primary-color)
 }
-p, a {
+p {
     color: var(--font-color)
+}
+a {
+    color: var(--ancor-color);
 }
 h1{
     color: var(--heading-color)
 }
 article{
     background-color: var(--secondary-color) ;
+}
+nav {
+    background-color: var(--heading-color);
+    padding: 10px;
+    text-align: center;
+    color: var(--ancor-color);
 }
 
 #img2,#img3,#img4,#img5 {
