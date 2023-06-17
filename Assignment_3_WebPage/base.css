@@ -3,16 +3,16 @@
     --primary-color: rgb(3, 150, 12);
     --secondary-color: rgb(20, 198, 157);
     --font-color: rgb(0,0,0);
-    --heading-color: rgb(187, 84, 0);
+    --heading-color: rgb(1, 77, 0);
 
 }
 
 [data-theme="dark"] {
-     --bg-color: rgb(112, 109, 109);
-     --primary-color: rgb(249, 230, 207);
-    --secondary-color: rgb(187, 125, 187);
+     --bg-color: rgb(14, 10, 10);
+     --primary-color: rgb(128, 124, 118);
+    --secondary-color: rgba(92, 79, 92, 0.979);
     --font-color: rgb(255, 255, 255);
-    --heading-color: rgb(0, 0, 0);
+    --heading-color: rgb(224, 199, 199);
  }
 
  body {
