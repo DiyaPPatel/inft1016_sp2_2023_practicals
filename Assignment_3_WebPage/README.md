@@ -16,7 +16,7 @@ Also added a java script code for the users to see the current date and time whe
 
 Finally, the local storage is used to remember the user's theme preference and name of the user so that if the user opens the page again it shows the last thing he/she leaved. The page remebers the last name entered and the theme they were in so that they get the same. 
 
- # List of Assignment.
+ # List of files.
 
  1. HTML file - Toggle.html
  2. README file for the brief details about the project
@@ -30,3 +30,4 @@ Finally, the local storage is used to remember the user's theme preference and n
 |2       |Current date and time                  |
 |3       |Light and Dark theme                   |
 |4       |Local Storage to store users preference|
+|5       |5 corresponding images                 |
